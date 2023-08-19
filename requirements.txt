@@ -1,0 +1,9 @@
+jupyterlab
+gnuradio
+numpy
+scipy
+matplotlib
+ipympl
+python-sounddevice
+soapysdr-module-rtlsdr
+pymodes
