@@ -10,7 +10,9 @@ We will be using conda to install tools necessary for the rest of the workshop. 
 
 Installation depends on the operating system you use. So, follow one of the following sections depending on your system. Installation steps for Linux and Mac users are nearly the same. 
 ```
-If you don't want to touch your system at all, you can use [DragonOS_FocalX](https://sourceforge.net/projects/dragonos-focal/files/latest/download) live USB boot option. The image already contains many popular tools related to SDR world. After you boot your system up, connect to the WiFi and then just proceed to the Linux installation section to complete the installation. 
+If you don't want to touch your system at all, you can use [DragonOS_FocalX](https://sourceforge.net/projects/dragonos-focal/files/latest/download) live USB boot option. 
+The image already contains many popular tools related to SDR world. 
+After you boot your system up, connect to the WiFi and then just proceed to the Linux installation section to complete the installation. 
 ``` 
 
 ### Windows
@@ -22,14 +24,17 @@ So, first start a miniforge prompt, this will bring up a console with (base) at 
     conda create --name GRCon23 --file requirements.txt
 
 ### Linux and MacOS
-Run `./install.sh`. This will download and install miniforge, create an environment, then install all necessary packages for you. 
+Run `./install.sh`. This will download and install miniforge, create an environment, then install all necessary packages for you. Mac users should install Homebrew to use wget. wget can be installed with `homebrew install wget`. 
 
-## Opening your newly created environment
-We have to first activate our newly installed environment. If you are using Windows just open a miniforge command prompt. In Linux /MacOS you need a source command for this. After `conda activate` command gets executed, note that (base) at the beggining of the prmopt will change into (GRCon23). After GRCon23 environment is activated, we can start jupyter-lab. 
+## Opening Notebooks
+We have to first activate our newly installed environment. If you are using Windows just open a miniforge command prompt. In Linux /MacOS you need a `source` command for this. After `conda activate` command gets executed, note that (base) at the beggining of the prompt will change into (GRCon23). After GRCon23 environment is activated, we can start jupyter-lab. 
     
     source "${HOME}/conda/etc/profile.d/conda.sh"
     conda activate GRCon23
     jupyter-lab
+
+## Using RTL-SDRs
+In order to use RTL-SDR within GNU Radio, drivers must first be installed. This is described in the SDR notebook. We will use zadig software for Windows. Linux users may `blacklist` RTL so that default DVB-T driver is not loaded when dongle is plugged in.  
     
 ## Labs
 
