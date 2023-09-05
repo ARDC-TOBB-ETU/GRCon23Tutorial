@@ -28,7 +28,7 @@ options:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 8]
+    coordinate: [168, 20.0]
     rotation: 0
     state: enabled
 
@@ -42,7 +42,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [184, 12]
+    coordinate: [352, 20.0]
     rotation: 0
     state: enabled
 - name: analog_wfm_rcv_0
@@ -174,7 +174,7 @@ blocks:
     affinity: ''
     agc: 'False'
     alias: ''
-    center_freq: 88e6
+    center_freq: 89.9e6
     comment: ''
     dev_args: ''
     freq_correction: '0'

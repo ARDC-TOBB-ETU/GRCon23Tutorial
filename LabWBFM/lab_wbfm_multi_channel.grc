@@ -201,7 +201,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    center_freq: 200e3
+    center_freq: 400e3
     comment: 'decimation = 4
 
       taps = taps'
@@ -307,7 +307,7 @@ blocks:
     affinity: ''
     agc: 'False'
     alias: ''
-    center_freq: 96.2e6
+    center_freq: 89.9e6
     comment: ''
     dev_args: ''
     freq_correction: '0'
